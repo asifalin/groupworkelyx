@@ -6,6 +6,7 @@ import React from 'react'
 import Review from './Component/Abbas/Review'
 import Aution from './Component/Aution details/Aution'
 
+
 function App() {
   return (
     <div >
@@ -15,6 +16,7 @@ function App() {
 </div>
 </section>
 <Aution/>
+
 
 
  

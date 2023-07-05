@@ -8,12 +8,13 @@ import {
   Aution5,
   user,
   hammer,
+
 } from "../../images/index.js";
-import { BsClock, BsArrowUp, BsHash,BsQuestionCircle } from "react-icons/bs";
+import { BsClock, BsArrowUp, BsHash, BsQuestionCircle } from "react-icons/bs";
 import { RiShareForwardLine } from "react-icons/ri";
 import { GrFavorite } from "react-icons/gr";
-import { FaRegCommentDots} from "react-icons/fa";
-
+import { AiOutlineComment } from "react-icons/ai";
+import { FaRegCommentDots,FaRegComments } from "react-icons/fa";
 
 function Aution() {
   const [currentTime, setCurrentTime] = useState(
@@ -227,65 +228,79 @@ function Aution() {
                 <button>PLACE BID</button>
               </div>
             </div>
-         
 
-          <div className="mt-3" >
-            <div className="flex   gap-[30%] border[#CCD9E0] border-l border-t border-r rounded-r-md p-5 ">
-              <div className="mt-4  w-[30%]">
-                <p>CURRENT BID</p>
-                <h1 className="font-bold text-2xl">$9,056</h1>
+            <div className="mt-3">
+              <div className="flex   gap-[30%] border[#CCD9E0] border-l border-t border-r rounded-r-md p-5 ">
+                <div className="mt-4  w-[30%]">
+                  <p>CURRENT BID</p>
+                  <h1 className="font-bold text-2xl">$9,056</h1>
+                </div>
+                <div className=" leading-7">
+                  <div className="flex gap-1 items-center">
+                    <img src={user} alt="" />
+                    <pre>Bidder : Alex Jonhson</pre>
+                  </div>
+                  <div className=" flex gap-1 items-center">
+                    <img src={user} alt="" />
+                    <pre>
+                      Seller : Sandy Joseph{" "}
+                      <span className="text-[blue] underline">contact</span>
+                    </pre>
+                  </div>
+                  <div className="flex gap-1 items-center">
+                    <img src={hammer} alt="" />
+                    <pre>Bidder : Alex Jonhson</pre>
+                  </div>
+                </div>
               </div>
-              <div className=" leading-7">
-                <div className="flex gap-1 items-center">
-                <img src={user} alt="" />
-                  <pre>Bidder : Alex Jonhson</pre>
-                </div>
-                <div className=" flex gap-1 items-center">
-                <img src={user} alt="" />
-                <pre>Seller : Sandy Joseph <span className="text-[blue] underline">contact</span></pre>
-                </div>
-                <div className="flex gap-1 items-center">
-                <img src={hammer} alt="" />
-                <pre>Bidder : Alex Jonhson</pre>
+              <div className="bg-[#F8F8FF]">
+                <div className="flex p-4 gap-[29%] text-2xl ">
+                  <div className="flex ml-1 gap-1 ">
+                    <BsQuestionCircle className="mt-1" />
+                    <p>How to place a bid?</p>
+                  </div>
+                  <div className="flex gap-1">
+                    <BsQuestionCircle className="mt-1" />
+                    <p>How to place a Comments?</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="bg-[#F8F8FF]">
-<div className="flex p-4 gap-[29%] text-2xl ">
-
-<div className="flex ml-1 gap-1 ">
-<BsQuestionCircle className="mt-1" />
-<p>How to place a bid?</p>
-</div>
-<div className="flex gap-1">
-
-<BsQuestionCircle className="mt-1" />
-<p>How to place a Comments?</p>
-</div>
-
-</div>
-  
-            </div>
             </div>
           </div>
-         
+
           <div className="flex justify-between p-6">
-          <div><h1>comments</h1></div>
-          <div>
-            <ul className="flex gap-8">
-              <li>Newest</li>
-              <li>uploaded</li>
-              <li>salller Comments</li>
-              <li>Bids history</li>
-            </ul>
+            <div>
+              <h1>comments</h1>
+            </div>
+            <div>
+              <ul className="flex gap-8">
+                <li>Newest</li>
+                <li>uploaded</li>
+                <li>salller Comments</li>
+                <li>Bids history</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <hr/>
+          <hr />
+          <div className="flex border p-2 rounded-md mt-3  ">
+            <input
+              type="text "
+              className="w-[100%]  border-none rounded-md outline-none"
+              name="gsearch "
+              placeholder="Add to comments and Bids "
+            /> 
+<div className=" w-10 h-15 items-center  rounded  ">
+<AiOutlineComment className="text-4xl   bg-blue-700 rounded-md text-white"/>
+</div>
+            
+          </div>
 
-  
-        <input type="text " className="w-[100%] p-3 border-[1px] rounded-md mt-6 outline-none" name="gsearch " placeholder="Add to comments and Bids"/>
-        
+          <div>
+            <div>
 
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>

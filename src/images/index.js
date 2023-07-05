@@ -7,4 +7,5 @@ import Aution5 from "../images/Aution detailsi 5.png";
 import user from  "../images/Users.png";
 import hammer from  "../images/Hammer.png";
 
-export {Autionbg,Aution1,Aution2,Aution3,Aution4,Aution5,user,hammer}
+
+export {Autionbg,Aution1,Aution2,Aution3,Aution4,Aution5,user,hammer,}
